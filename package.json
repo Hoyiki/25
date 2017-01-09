@@ -1,0 +1,17 @@
+{
+  "name": "25",
+  "version": "1.0.0",
+  "description": "this is a time management application using potato timer",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "jennifer",
+  "license": "ISC",
+  "dependencies": {
+    "dot-prop": "^4.1.0",
+    "electron-config": "^0.2.1",
+    "menubar": "^5.2.0",
+    "node-notifier": "^4.6.1"
+  }
+}
