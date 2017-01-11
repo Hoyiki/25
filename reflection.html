@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Reflection</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <h3>In the previous <pre id="clockdiv">minutes:        seconds:   </pre>, I</h3>
-  <textarea id="reflection" rows="8" cols="80"></textarea>
+  <div class="form-style-8">
+  <textarea class="form-style-8" placeholder="" onkeyup="adjust_textarea(this)" id="reflection"></textarea>
+  </div>
   <script>require('./reflection.js')</script>
 </body>
 </html>

@@ -19,13 +19,16 @@ button_start.textContent = 'start'
 button_start.addEventListener('click', () => {
   var txtbox = document.getElementById("plan");
   var plan = txtbox.value;
+  console.log(plan)
   //var length = document.getElementById("lengthInput").value
 
   //https://github.com/mikaelbr/node-notifier start working notification
   notifier.notify({
     'title': 'Start Working',
-    'message': plan,
-    'sound': 'Submarine'
+    'message': plan+' ',
+    'sound': 'Submarine',
+    'icon': 'file://' + __dirname + '/notification_icon.png',
+    //'contentImage': 'file://' + __dirname + '/notification_icon.png'
   });
   //ipc.send('send-current-length', length);
   ipc.send('plan', plan);

@@ -67,18 +67,18 @@ a:active {
 .main {
 	max-width: 50em;
 }
-
+/*
 /* To Navigation Style */
-.codrops-top {
+/*.codrops-top {
 	background: #fff;
 	background: rgba(255, 255, 255, 0.4);
 	text-transform: uppercase;
 	width: 100%;
 	font-size: 0.69em;
 	line-height: 2.2;
-}
+}*/
 
-.codrops-top a {
+/*.codrops-top a {
 	padding: 0 1em;
 	letter-spacing: 0.1em;
 	color: #E96D65;
@@ -138,4 +138,4 @@ a:active {
 		display: none;
 	}
 
-}
+}*/

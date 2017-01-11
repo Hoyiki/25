@@ -50,6 +50,7 @@
 .form-style-8 textarea{
     resize:none;
     overflow: hidden;
+    font: 26px Arial, Helvetica, sans-serif; //need to change the font of text area
 }
 /*.form-style-8 input[type="button"],
 .form-style-8 input[type="submit"]{

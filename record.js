@@ -10,16 +10,47 @@ button_index.addEventListener('click', () => {
 }, false)
 document.body.appendChild(button_index)
 
-for (let [key, value] of config) {
-  console.log((new Date(key)).toLocaleString())
+let date_array = [] //list structure: [[12/19/2012, [key, value], [key, value],[],...],[],...] put everything that belongs to the same date together
+//date format: date.toLocaleDateString('en-US')
 
-  console.log(value);
-  var node = document.createElement("LI");
-  let a = config.get(key)
-  console.log(dotProp.get(value, 'plan'))
-  console.log(dotProp.get(value, 'reflection'))
-  console.log(dotProp.get(value, 'actualLength'))
-  var textnode = document.createTextNode(key + "  " + dotProp.get(value, 'plan') + dotProp.get(value, 'reflection') + dotProp.get(value, 'actualLength'));
-  node.appendChild(textnode);
-  document.getElementById("recordList").appendChild(node);
+
+for (let [key, value] of config) {
+
+  //var node = document.createElement("LI");
+  //var textnode = document.createTextNode(key + "  " + dotProp.get(value, 'plan') + dotProp.get(value, 'reflection') + dotProp.get(value, 'actualLength'));
+  //node.appendChild(textnode);
+  //document.getElementById("recordList").appendChild(node);
+
+  var date = new Date(key)
+  var day = date.toLocaleDateString('en-US')
+  let l = date_array.length
+  if (l == 0){
+    date_array.push([day]);
+    date_array[0].push([key,value]);
+  }
+  else if (day == date_array[l-1][0]) {
+    date_array[l-1].push([key,value]);
+  }
+  else {
+    date_array.push([day]);
+    date_array[l].push([key,value]);
+  }
+}
+
+console.log(date_array)
+
+for (let i = date_array.length - 1; i >= 0; i--){
+  let n = date_array[i]
+  let day = n[0]
+  console.log("-----"+day+"-----")
+  var day_node = document.createElement("UL");
+  for (let a = 1; a <= n.length-1; a++){
+    [key, value] = n[a]
+    var time_node = document.createElement("LI");
+    var textnode = document.createTextNode(key + "  " + dotProp.get(value, 'plan') + dotProp.get(value, 'reflection') + dotProp.get(value, 'actualLength'));
+    console.log(textnode)
+    time_node.appendChild(textnode)
+    day_node.appendChild(time_node)
+  }
+  document.getElementById("recordList").appendChild(day_node);
 }
