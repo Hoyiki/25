@@ -3,39 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Index</title>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/textarea_line.css">
+  <link rel="stylesheet" href="css/grid12.css">
   <!-- http://tympanus.net/codrops/2013/05/21/natural-language-form-with-custom-input-elements/ found this awesome design combining a sentence and inputs -->
-  <link rel="stylesheet" type="text/css" href="css/default.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/nlform.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Ubuntu" rel="stylesheet">
+  <!-- <script src="js/modernizr.custom.js"></script> -->
+  <!-- <script src="js/nlform.js"></script> -->
 </head>
-<body class="nl-blurred">
-  <div class="container demo-1">
-  <div class="main clearfix">
-				<form id="nl-form" class="nl-form">
-					In the next
-					<select style="color:red;">
-						<option value="1">10</option>
-						<option value="2">20</option>
-						<option value="3" selected>25</option>
-						<option value="4">30</option>
-						<option value="5">40</option>
-					</select>
-          minutes, I am going to focus on
-          <br>
-          <div class="form-style-8">
-          <textarea class="form-style-8" placeholder="" onkeyup="adjust_textarea(this)" id="plan"></textarea>
-          </div>
-          <!-- <div class="nl-submit-wrap">
-						<button class="nl-submit" type="submit">Start</button>
-					</div> -->
-				</form>
-        <!-- <form class="form-style-8">
-        <textarea class="form-style-8" placeholder="" onkeyup="adjust_textarea(this)" id="plan"></textarea>
-        </form> -->
+<body>
+
+  <div class="row" style="height:50px"></div>
+  <div class="row">
+    <div class="col-xs-1 col-md-2 col-lg-2"></div>
+    <div class="col-xs-10 col-md-8 col-lg-8" style="font-size:18px; font-family: 'Ubuntu', sans-serif;
+">In the next <select style="line-height: inherit;
+display: inline-block;
+color: #b99668;
+cursor: pointer;
+border-bottom: 1px dashed #b14943;
+font-size:18px; font-family: 'Ubuntu', sans-serif;
+border: none;
+background: transparent;
+">
+  <option value="1" style="background:pink;">10</option>
+  <option value="2">20</option>
+  <option value="3" selected>25</option>
+  <option value="4">30</option>
+  <option value="5">40</option>
+</select> minutes, I am going to focus on</div>
   </div>
-	</div>
+
+  <div class="row">
+    <div class="col-xs-1 col-md-2 col-lg-2"></div>
+    <div class="col-xs-10 col-md-8 col-lg-8">
+      <div class="form-style-8">
+        <textarea class="form-style-8" placeholder="" onkeyup="adjust_textarea(this)" id="plan" style="color: #b99668; font-family: 'Ubuntu', sans-serif;
+"></textarea>
+      </div>
+    </div>
+  </div>
 
   <!-- <h1>In the next <input id="lengthInput" pattern="[1-200.]+" type="number" value="25"> minutes, I plan to</h1> -->
   <!-- <form class="form-style-8">
