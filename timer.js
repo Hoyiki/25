@@ -46,13 +46,13 @@ let start_time_key = d.toJSON().slice(0,-5); //key of the current node, can be c
 config.set(start_time_key+'.plan', plan);
 
 //button to stop the timer and go to the input page
-var button = document.createElement('button')
-button.textContent = 'stop'
+var button = document.getElementById('stop_button')
+//button.textContent = 'stop'
 button.addEventListener('click', () => {
   // main.openWindow()
   ipc.send('load-page', 'file://' + __dirname + '/reflection.html');
 }, false)
-document.body.appendChild(button)
+//document.body.appendChild(button)
 
 var plandiv = document.getElementById('plandiv')
 plandiv.innerHTML = plan
@@ -69,7 +69,7 @@ initializeClock('clockdiv', d, plan);
   var cWidth=canvas.width;
   var cHeight=canvas.height;
 
-  var countTo=25*60;
+  var countTo=25*60; //this is where to set time for the timer
 
   var min=Math.floor(countTo/60);
   var sec=countTo-(min*60);
@@ -84,13 +84,13 @@ initializeClock('clockdiv', d, plan);
 
     //======= reset canvas
 
-    ctx.fillStyle="#2e3032";
+    ctx.fillStyle="#ffffff";
     ctx.fillRect(0,0,cWidth,cHeight);
 
     //========== base arc
 
     ctx.beginPath();
-    ctx.strokeStyle="#252424";
+    ctx.strokeStyle="#f6f2ed";
     ctx.lineWidth=14;
     ctx.arc(cWidth/2,cHeight/2,100,(Math.PI/180)*0,(Math.PI/180)*360,false);
     ctx.stroke();
@@ -99,61 +99,61 @@ initializeClock('clockdiv', d, plan);
     //========== dynamic arc
 
     ctx.beginPath();
-    ctx.strokeStyle="#df8209";
+    ctx.strokeStyle="#cfbfac";
     ctx.lineWidth=14;
     ctx.arc(cWidth/2,cHeight/2,100,(Math.PI/180)*270,(Math.PI/180)*angle,false);
     ctx.stroke();
     ctx.closePath();
 
-    //======== inner shadow arc
-
-    grad=ctx.createRadialGradient(cWidth/2,cHeight/2,80,cWidth/2,cHeight/2,115);
-    grad.addColorStop(0.0,'rgba(0,0,0,.4)');
-    grad.addColorStop(0.5,'rgba(0,0,0,0)');
-    grad.addColorStop(1.0,'rgba(0,0,0,0.4)');
-
-    ctx.beginPath();
-    ctx.strokeStyle=grad;
-    ctx.lineWidth=14;
-    ctx.arc(cWidth/2,cHeight/2,100,(Math.PI/180)*0,(Math.PI/180)*360,false);
-    ctx.stroke();
-    ctx.closePath();
+    // //======== inner shadow arc
+    //
+    // // grad=ctx.createRadialGradient(cWidth/2,cHeight/2,80,cWidth/2,cHeight/2,115);
+    // // grad.addColorStop(0.0,'rgba(0,0,0,.4)');
+    // // grad.addColorStop(0.5,'rgba(0,0,0,0)');
+    // // grad.addColorStop(1.0,'rgba(0,0,0,0.4)');
+    //
+    // ctx.beginPath();
+    // ctx.strokeStyle="#f6f2ed";
+    // ctx.lineWidth=14;
+    // ctx.arc(cWidth/2,cHeight/2,100,(Math.PI/180)*0,(Math.PI/180)*360,false);
+    // ctx.stroke();
+    // ctx.closePath();
 
     //======== bevel arc
 
-    grad=ctx.createLinearGradient(cWidth/2,0,cWidth/2,cHeight);
-    grad.addColorStop(0.0,'#6c6f72');
-    grad.addColorStop(0.5,'#252424');
+    // grad=ctx.createLinearGradient(cWidth/2,0,cWidth/2,cHeight);
+    // grad.addColorStop(0.0,'#6c6f72');
+    // grad.addColorStop(0.5,'#252424');
 
-    ctx.beginPath();
-    ctx.strokeStyle=grad;
-    ctx.lineWidth=1;
-    ctx.arc(cWidth/2,cHeight/2,93,(Math.PI/180)*0,(Math.PI/180)*360,true);
-    ctx.stroke();
-    ctx.closePath();
+    // ctx.beginPath();
+    // ctx.strokeStyle="#f6f2ed";
+    // ctx.lineWidth=1;
+    // ctx.arc(cWidth/2,cHeight/2,93,(Math.PI/180)*0,(Math.PI/180)*360,true);
+    // ctx.stroke();
+    // ctx.closePath();
 
-    //====== emboss arc
-
-    grad=ctx.createLinearGradient(cWidth/2,0,cWidth/2,cHeight);
-    grad.addColorStop(0.0,'transparent');
-    grad.addColorStop(0.98,'#6c6f72');
-
-    ctx.beginPath();
-    ctx.strokeStyle=grad;
-    ctx.lineWidth=1;
-    ctx.arc(cWidth/2,cHeight/2,107,(Math.PI/180)*0,(Math.PI/180)*360,true);
-    ctx.stroke();
-    ctx.closePath();
+    // //====== emboss arc
+    //
+    // // grad=ctx.createLinearGradient(cWidth/2,0,cWidth/2,cHeight);
+    // // grad.addColorStop(0.0,'transparent');
+    // // grad.addColorStop(0.98,'#6c6f72');
+    //
+    // ctx.beginPath();
+    // ctx.strokeStyle="#f6f2ed";
+    // ctx.lineWidth=1;
+    // ctx.arc(cWidth/2,cHeight/2,107,(Math.PI/180)*0,(Math.PI/180)*360,true);
+    // ctx.stroke();
+    // ctx.closePath();
 
     //====== Labels
 
-    var textColor='#646464';
+    var textColor='#b99668';
     var textSize="12";
     var fontFace="helvetica, arial, sans-serif";
 
     ctx.fillStyle=textColor;
     ctx.font=textSize+"px "+fontFace;
-    ctx.fillText('MIN',cWidth/2-46,cHeight/2-40);
+    ctx.fillText('MIN',cWidth/2-46,cHeight/2-25);
     ctx.fillText('SEC',cWidth/2+25,cHeight/2-15);
 
     //====== Values
@@ -162,8 +162,8 @@ initializeClock('clockdiv', d, plan);
 
     ctx.fillStyle='#6292ae';
 
-    ctx.font='60px '+fontFace;
-      ctx.fillText(min ,cWidth/2-60,cHeight/2+35);
+    ctx.font='62px '+fontFace;
+    ctx.fillText(min ,cWidth/2-60,cHeight/2+35);
 
 //     if (min>9) {
 //       ctx.font='84px '+fontFace;
@@ -177,7 +177,7 @@ initializeClock('clockdiv', d, plan);
 //       ctx.fillText(min ,cWidth/2-60,cHeight/2+35);
 //     }
 
-    ctx.font='50px '+fontFace;
+    ctx.font='46px '+fontFace;
     if (sec<10) {
       ctx.fillText('0'+sec,cWidth/2+10,cHeight/2+35);
     }

@@ -2,7 +2,8 @@
 // const main = remote.require('./main.js')
 const ipc = require('electron').ipcRenderer;
 
-var button_start = document.createElement('button')
+//var button_start = document.createElement('button')
+var button_start = document.getElementById('start_button')
 var button_record = document.createElement('button')
 var button_clear = document.createElement('button')
 
@@ -15,7 +16,7 @@ var notifier = new NotificationCenter({
   customPath: void 0 // Relative path if you want to use your fork of terminal-notifier
 });
 
-button_start.textContent = 'start'
+//button_start.textContent = 'start'
 button_start.addEventListener('click', () => {
   var txtbox = document.getElementById("plan");
   var plan = txtbox.value;
@@ -46,6 +47,6 @@ button_clear.addEventListener('click', () => {
   config.clear();
 }, false)
 
-document.body.appendChild(button_start)
+//document.body.appendChild(button_start)
 document.body.appendChild(button_record)
 document.body.appendChild(button_clear)

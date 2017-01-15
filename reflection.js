@@ -13,8 +13,7 @@ function updateClock(id, current_start_time){
   var clock = document.getElementById(id);
   var timeinterval = setInterval(function(){
     var t = getTimePassed(current_start_time);
-    clock.textContent = 'minutes: ' + t.minutes  +
-                      '     seconds: ' + t.seconds;
+    clock.textContent =t.minutes;
     button.onclick = function (){
       clearInterval(timeinterval);
       config.set(current_key+'.actualLength', t.minutes+(t.seconds)/60)
@@ -29,6 +28,9 @@ const config = new Config();
 
 let current_start_time = remote.getGlobal('current_start_time')
 let current_key = remote.getGlobal('current_key')
+let plan = remote.getGlobal('plan')
+
+document.getElementById('reflection').value = plan
 
 var button = document.createElement('button')
 button.textContent = 'submit'

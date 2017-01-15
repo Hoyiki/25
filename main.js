@@ -4,7 +4,7 @@ const ipcMain = require('electron').ipcMain;
 // const Config = require('electron-config');
 // const config = new Config();
 
-global.plan = 'work'
+global.plan = null
 global.current_start_time = null
 global.current_length = 25
 global.current_key = null
