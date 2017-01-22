@@ -3,11 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <title>Record</title>
+  <link rel="stylesheet" href="css/textarea_line.css">
+  <link rel="stylesheet" href="css/grid12.css">
+  <link rel="stylesheet" href="css/record.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="calender/codebase/dhtmlxcalendar.css">
+  <script src="calender/codebase/dhtmlxcalendar.js"></script>
 </head>
 <body>
-  <h1>record</h1>
-  <ul id="recordList">
-  </ul>
+  <!-- <div class="row" style="height:20px;">
+  </div> -->
+  <div id="box" style="position:relative;height:500px;"></div>
+  <div class="row" style="background:#f6f2ed;" id="divHead">
+    <div class="col-xs-3 col-md-3 col-lg-3" style="text-align:center; font-size:16px; font-family: 'Ubuntu', sans-serif; color:#b99668;" id="divDate"></div>
+    <div class="col-xs-7 col-md-7 col-lg-7"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif; color:#b99668;" id="divDayLength"></div>
+  </div>
+  <div class="row" style="height:20px;"></div>
+
+  <div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1 recordFont">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">The Boxed Text content block provides several options for adding content, like images and links, to your campaign.</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">27 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">Japanese Lesson 5</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">67 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+</div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">Japanese Lesson 5</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">47 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">TextBlock is not a control, per se, since it doesn't inherit from the Control class</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">270 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">Japanese Lesson 5</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">270 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">Japanese Lesson 5 </div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">27 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">Japanese Lesson 5</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">27 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+  <div class="row">
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-1" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">12:46 PM</div>
+    <div class="col-xs-6 col-md-6 col-lg-6" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">Japanese Lesson 5</div>
+    <div class="col-xs-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-2 col-md-2 col-lg-2" style="font-size:16px; font-family: 'Ubuntu', sans-serif;">27 min</div>
+  </div>
+  <div class="row" style="height:10px;">
+  </div>
+
   <script>require('./record.js')</script>
 </body>
 </html>

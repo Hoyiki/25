@@ -4,7 +4,7 @@ const ipc = require('electron').ipcRenderer;
 
 //var button_start = document.createElement('button')
 var button_start = document.getElementById('start_button')
-var button_record = document.createElement('button')
+var button_record = document.getElementById('record_button')
 var button_clear = document.createElement('button')
 
 const NotificationCenter = require('node-notifier').NotificationCenter;
@@ -36,9 +36,8 @@ button_start.addEventListener('click', () => {
   ipc.send('load-page', 'file://' + __dirname + '/timer.html');
 }, false)
 
-button_record.textContent = 'record'
 button_record.addEventListener('click', () => {
-  ipc.send('load-page', 'file://' + __dirname + '/record.html');
+  ipc.send('load-record', 'file://' + __dirname + '/record.html'); //open a new window here
 }, false)
 
 //this button is only for developing stage
@@ -48,5 +47,4 @@ button_clear.addEventListener('click', () => {
 }, false)
 
 //document.body.appendChild(button_start)
-document.body.appendChild(button_record)
-document.body.appendChild(button_clear)
+document.body.appendChild(button_clear) //the button is only for the development stage

@@ -33,6 +33,12 @@ mb.on('ready', function ready () {
         mb.window.loadURL(arg);
     });
 
+    ipcMain.on('load-record', (event, arg) => {
+        let win = new BrowserWindow({width:800, height:600})
+        win.loadURL(arg);
+        win.webContents.openDevTools()
+    });
+
     ipcMain.on('plan', (event, arg) => {
         global.plan = arg; //to show the plan in the timer
     });

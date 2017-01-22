@@ -32,14 +32,12 @@ let plan = remote.getGlobal('plan')
 
 document.getElementById('reflection').value = plan
 
-var button = document.createElement('button')
-button.textContent = 'submit'
+var button = document.getElementById('summit_button')
 button.addEventListener('click', () => {
   // main.openWindow()
   ipc.send('load-page', 'file://' + __dirname + '/index.html');
   let reflection = document.getElementById('reflection').value
   config.set(current_key+'.reflection', reflection)
 }, false)
-document.body.appendChild(button)
 
 updateClock("clockdiv", current_start_time)
