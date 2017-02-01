@@ -47,13 +47,21 @@ function generateOneRecordDiv ([key, value]){
   div5.classList.add("col-xs-2","col-md-2","col-lg-2","recordFont")
 
   let time = new Date(key)
-  div1.innerHTML = time.toLocaleTimeString()
+  let time_string = time.toLocaleTimeString()
+  console.log(time_string.length)
+  if (time_string.length == 10){
+    time_string = '0'.concat(time_string)
+  }
+  let string = time_string.substring(0,5).concat(time_string.substring(8,11))  
+  div2.innerHTML = string
   div3.innerHTML = dotProp.get(value, 'reflection')
   div5.innerHTML = Math.round(dotProp.get(value, 'actualLength'))
 
-  for (i=1; i<=5; i++){
-    divRow.appendChild("div"+i.toString())
-  }
+  divRow.appendChild(div1)
+  divRow.appendChild(div2)
+  divRow.appendChild(div3)
+  divRow.appendChild(div4)
+  divRow.appendChild(div5)
   return divRow
 }
 
@@ -108,15 +116,38 @@ myCalendar.show();
 let divHead = document.getElementById('divHead')
 let divDate = document.getElementById('divDate')
 let divDayLength = document.getElementById('divDayLength')
+var recordDiv = document.getElementById('recordDiv')
+
+//once opening the app, show the list from the latest day
+
+recordDiv.innerHTML = ""
+
+var latest_day = date_array[date_array.length-1][0]
+divDate.innerHTML = latest_day
+let dayList = findDay(latest_day, date_array)
+let length = getTotalLength(dayList)
+divDayLength.innerHTML = length+' min'
+
+for (i=1; i<dayList.length; i++){
+  let rec = generateOneRecordDiv(dayList[i])
+  recordDiv.appendChild(rec)
+}
+
+
 var yo = myCalendar.attachEvent("onClick", function(){
+
+  recordDiv.innerHTML = ""
+
   var d = myCalendar.getDate(true);
   divDate.innerHTML = d
   let dayList = findDay(d, date_array)
   let length = getTotalLength(dayList)
   divDayLength.innerHTML = length+' min'
 
-  var recordDiv = document.createElement('div')
-
+  for (i=1; i<dayList.length; i++){
+    let rec = generateOneRecordDiv(dayList[i])
+    recordDiv.appendChild(rec)
+  }
 });
 
 

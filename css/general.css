@@ -1,0 +1,17 @@
+.maincolor {
+  color: #6897b9;
+}
+
+.selectStyle {
+  line-height: inherit;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px dashed #b14943;
+  font-size:18px; font-family: 'Ubuntu', sans-serif;
+  border: none;
+  background: transparent;
+}
+
+.iconButton {
+  padding: 0; border: none; background: none;
+}

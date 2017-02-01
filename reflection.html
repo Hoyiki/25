@@ -10,34 +10,36 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/general.css">
   <!-- <script src="js/modernizr.custom.js"></script> -->
   <!-- <script src="js/nlform.js"></script> -->
 </head>
 <body>
 
   <div class="row" style="height:50px">
-    <div class="col-xs-1 col-md-1 col-lg-1"><i class="material-icons" style="color:#b99668;">clear</i></div>
+    <div class="col-xs-1 col-md-1 col-lg-1"><i class="material-icons maincolor" id="quit_button">clear</i></div>
     <!-- <div class="col-xs-1 col-md-1 col-lg-1"><i class="material-icons" style="color:#b99668;">date_range</i></div> -->
   </div>
   <div class="row">
     <div class="col-xs-1 col-md-2 col-lg-2"></div>
     <div class="col-xs-10 col-md-8 col-lg-8" style="font-size:18px; font-family: 'Ubuntu', sans-serif;
-">In the past <div id="clockdiv" style="display:inline; color:#b99668;">  </div> minutes, I focused on</div>
+">In the past <div id="clockdiv" class="maincolor" style="display:inline;">  </div> minutes, I focused on</div>
   </div>
 
   <div class="row">
     <div class="col-xs-1 col-md-2 col-lg-2"></div>
     <div class="col-xs-10 col-md-8 col-lg-8">
       <div class="form-style-8">
-        <textarea class="form-style-8" placeholder="" onkeyup="adjust_textarea(this)" id="reflection" style="color: #b99668; font-family: 'Ubuntu', sans-serif;"></textarea>
+        <textarea class="form-style-8 maincolor" placeholder="" onkeyup="adjust_textarea(this)" id="reflection" style="font-family: 'Ubuntu', sans-serif;"></textarea>
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col-xs-1 col-md-2 col-lg-2"></div>
-    <div class="col-xs-8 col-md-7 col-lg-7"></div>
-    <div class="col-xs-2 col-md-1 col-lg-1"><button style="padding: 0; border: none; background: none;"><i class="material-icons" style="font-size:48px; color:#b99668;" id="summit_button">done</i></button></div>
+    <div class="col-xs-7 col-md-7 col-lg-7"></div>
+    <div class="col-xs-1 col-md-1 col-lg-1"><button style="padding: 0; border: none; background: none;"><i class="material-icons maincolor" style="font-size:36px;" id="summit_button">done</i></button></div>
+    <div class="col-xs-1 col-md-1 col-lg-1"><button style="padding: 0; border: none; background: none;"><i class="material-icons maincolor" style="font-size:36px;" id="delete_button">delete</i></button></div>
   </div>
 
   <!-- <h1>In the next <input id="lengthInput" pattern="[1-200.]+" type="number" value="25"> minutes, I plan to</h1> -->

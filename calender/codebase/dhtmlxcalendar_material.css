@@ -210,14 +210,14 @@ div.dhtmlxcalendar_time_cont {
 	color: #a6a6a6;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_weekend {
-	color: #a6a6a6;
+	color: #e6918e;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date {
 	color: #a6a6a6;
 	background-color: #dcdcdc;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_weekend {
-	color: #a6a6a6;
+	color: #e6918e;
 	background-color: #dcdcdc;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_dis,
@@ -227,27 +227,27 @@ div.dhtmlxcalendar_time_cont {
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_weekend_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_weekend_dis {
-	color: #c0c0c0;
+	color: #e6918e;
 	background-color: #f2f2f2;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_holiday,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_weekend_holiday {
-	color: black;
+	color: #e6918e;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_holiday,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_weekend_holiday {
-	color:black;
+	color: #d43f3a;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_holiday_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_weekend_holiday_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_holiday_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_weekend_holiday_dis {
-	color:black;
+	color: #d43f3a;
 	background-color: #f2f2f2;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_hover {
-	color: black;
+	color: #a6a6a6;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_hover {
@@ -255,33 +255,33 @@ div.dhtmlxcalendar_time_cont {
 	background-color: #dcdcdc;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_weekend_hover {
-	color: #a6a6a6;
+	color: #e6918e;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_weekend_hover {
-	color: #a6a6a6;
+	color: #e6918e;
 	background-color: #dcdcdc;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_holiday_hover,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_weekend_holiday_hover,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_holiday_hover,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_date_weekend_holiday_hover {
-	color: black;
+	color: #d43f3a;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month {
 	color: #404040;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_weekend {
-	color: #a6a6a6;
+	color: #d43f3a;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date {
 	color: white;
-	background-color: #6897b9;
+	background-color: #3399cc;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_weekend {
 	color: white;
-	background-color: #6897b9;
+	background-color: #ef5350;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_dis {
@@ -290,28 +290,28 @@ div.dhtmlxcalendar_time_cont {
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_weekend_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_weekend_dis {
-	color: #c0c0c0;
+	color: #d43f3a;
 	background-color: #f2f2f2;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_holiday {
-	color: #c0c0c0;
+	color: #d43f3a;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_weekend_holiday {
-	color: #c0c0c0;
+	color: #d43f3a;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_holiday {
 	color: white;
-	background-color: #6897b9;
+	background-color: #ef5350;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_weekend_holiday {
 	color: white;
-	background-color: #6897b9;
+	background-color: #ef5350;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_holiday_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_holiday_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_weekend_holiday_dis,
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_weekend_holiday_dis {
-	color: #a6a6a6;
+	color: #d43f3a;
 	background-color: #f2f2f2;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_hover {
@@ -319,7 +319,7 @@ div.dhtmlxcalendar_time_cont {
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_weekend_hover {
-	color: #a6a6a6;
+	color: #d43f3a;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_hover {
@@ -328,23 +328,23 @@ div.dhtmlxcalendar_time_cont {
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_weekend_hover {
 	color: white;
-	background-color: #a6a6a6;
+	background-color: #ef5350;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_holiday_hover {
-	color: #a6a6a6;
+	color: #d43f3a;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_weekend_holiday_hover {
-	color: #a6a6a6;
+	color: #d43f3a;
 	background-color: #ebebeb;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_holiday_hover {
 	color: white;
-	background-color: #a6a6a6;
+	background-color: #ef5350;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell_month_date_weekend_holiday_hover {
 	color: white;
-	background-color: #5081ee;
+	background-color: #ef5350;
 }
 .dhtmlxcalendar_material div.dhtmlxcalendar_time_cont {
 	position: relative;
