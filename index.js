@@ -7,6 +7,7 @@ var button_start = document.getElementById('start_button')
 var button_record = document.getElementById('record_button')
 var button_clear = document.createElement('button')
 var button_quit = document.getElementById('quit_button')
+var txtbox = document.getElementById("plan");
 
 // const notifier = require('node-notifier').NotificationCenter;
 
@@ -18,7 +19,6 @@ const config = new Config();
 //   customPath: void 0 // Relative path if you want to use your fork of terminal-notifier
 // });
 
-
 button_quit.addEventListener('click', () => {
   ipc.send('quit', '');
 });
@@ -26,16 +26,15 @@ button_quit.addEventListener('click', () => {
 button_start.addEventListener('click', () => {
   var txtbox = document.getElementById("plan");
   var plan = txtbox.value;
-  console.log(plan)
   var time_select = parseInt(document.getElementById('timeLength').value)
 
   //https://github.com/mikaelbr/node-notifier start working notification
   // notifier_start.notify({
-  //   'title': 'Start working on',
-  //   'message': plan+' ',
+  //   'title': 'Yo',
+  //   'message': "",
   //   'sound': 'Submarine',
-  //   // 'icon': 'file://' + __dirname + '/notification_icon.png',
-  //   //'contentImage': 'file://' + __dirname + '/notification_icon.png'
+  //   'icon': 'file://' + __dirname + '/whale.png',
+  //   'contentImage': 'file://' + __dirname + '/whale.png'
   // });
   //ipc.send('send-current-length', length);
   ipc.send('plan-time-length',time_select);

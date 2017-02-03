@@ -50,7 +50,7 @@ if (noti==true) {
     'title': 'Worked for '+time+' minutes',
     'message':'haha',
     'sound': 'Submarine',
-    // 'icon': 'file://' + __dirname + '/notification_icon.png',
+    'icon': 'file://' + __dirname + '/whale.png',
     //'contentImage': 'file://' + __dirname + '/notification_icon.png'
   });
 }
