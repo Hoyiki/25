@@ -48,10 +48,12 @@ let time = remote.getGlobal('plan_time_length')
 if (noti==true) {
   notifier_start.notify({
     'title': 'Worked for '+time+' minutes',
-    'message':'haha',
+    'message':" ",
     'sound': 'Submarine',
-    'icon': 'file://' + __dirname + '/whale.png',
-    //'contentImage': 'file://' + __dirname + '/notification_icon.png'
+    //'wait':false,
+    //timeout: 20,
+    //'icon': 'file://' + __dirname + '/whale.png',
+    'contentImage': 'file://' + __dirname + '/whale.png'
   });
 }
 
