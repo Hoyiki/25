@@ -38,6 +38,9 @@ const config = new Config();
 
 let noti = remote.getGlobal('whether_notifying')
 let time = remote.getGlobal('plan_time_length')
+let current_start_time = remote.getGlobal('current_start_time')
+let current_key = remote.getGlobal('current_key')
+let plan = remote.getGlobal('plan')
 // notifier_start.notify({
 //   'title': 'Worked for '+time+' minutes',
 //   'message':'lalala',
@@ -45,21 +48,18 @@ let time = remote.getGlobal('plan_time_length')
 //   // 'icon': 'file://' + __dirname + '/notification_icon.png',
 //   //'contentImage': 'file://' + __dirname + '/notification_icon.png'
 // });
+console.log(noti)
 if (noti==true) {
   notifier_start.notify({
     'title': 'Worked for '+time+' minutes',
-    'message':" ",
+    'message':plan+' ',
     'sound': 'Submarine',
     //'wait':false,
     //timeout: 20,
     //'icon': 'file://' + __dirname + '/whale.png',
-    'contentImage': 'file://' + __dirname + '/whale.png'
+    //'contentImage': 'file://' + __dirname + '/whale.png'
   });
 }
-
-let current_start_time = remote.getGlobal('current_start_time')
-let current_key = remote.getGlobal('current_key')
-let plan = remote.getGlobal('plan')
 
 var button_quit = document.getElementById('quit_button')
 
