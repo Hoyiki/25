@@ -52,7 +52,7 @@ function generateOneRecordDiv ([key, value]){
   if (time_string.length == 10){
     time_string = '0'.concat(time_string)
   }
-  let string = time_string.substring(0,5).concat(time_string.substring(8,11))  
+  let string = time_string.substring(0,5).concat(time_string.substring(8,11))
   div2.innerHTML = string
   div3.innerHTML = dotProp.get(value, 'reflection')
   div5.innerHTML = Math.round(dotProp.get(value, 'actualLength'))
@@ -88,7 +88,7 @@ for (let [key, value] of config) {
   }
 }
 
-console.log(date_array)
+//console.log(date_array)
 
 var myCalendar = new dhtmlXCalendarObject("box");
 let lastDay = date_array[date_array.length-1][0]
