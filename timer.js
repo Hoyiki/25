@@ -2,7 +2,7 @@ const ipc = require('electron').ipcRenderer;
 const remote = require('electron').remote
 let plan = remote.getGlobal('plan')
 let length = remote.getGlobal('current_length')
-let plan_length =  0.1//parseInt(remote.getGlobal('plan_time_length'))
+let plan_length =  parseInt(remote.getGlobal('plan_time_length'))
 
 const notifier = require('node-notifier').NotificationCenter;
 
@@ -54,8 +54,8 @@ button.addEventListener('click', () => {
   ipc.send('load-page', 'file://' + __dirname + '/reflection.html');
 }, false)
 
-var plandiv = document.getElementById('plandiv')
-plandiv.innerHTML = plan
+// var plandiv = document.getElementById('plandiv')
+// plandiv.innerHTML = plan
 
 ipc.send('send-current-start-time', d);
 ipc.send('send-current-key', start_time_key);

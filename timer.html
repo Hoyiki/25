@@ -4,41 +4,24 @@
   <meta charset="UTF-8">
   <title>Counting Down</title>
   <link rel="stylesheet" href="css/grid12.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Ubuntu" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/general.css">
 
 </head>
 <body>
-  <!-- <canvas id="mycanvas" width="250" height="250"></canvas> -->
   <div class="row" style="height:3px;">
-    <div class="col-xs-1 col-md-1 col-lg-1"><i class="material-icons" style="color:#6897b9;" id="quit_button">clear</i></div>
+    <div class="col-xs-1 col-md-1 col-lg-1"><img src="img/clear.svg" id="quit_button"></img></div>
   </div>
   <div class="row">
     <div class="col-xs-1 col-md-1 col-lg-1 "></div>
     <div class="col-xs-8 col-md-4 col-lg-4 "><canvas id="mycanvas" width="220" height="220" style=" display: block; margin: 0 auto;"></canvas></div>
-    <!-- style=" display: block; margin: 0 auto;" -->
     <div class="col-xs-2 col-md-4 col-lg-4 ">
-      <div class="row" style="height:150px;">
-      </div>
-      <div class="row" style="height:30px;">
-        <div id="plandiv" style="font-size:18px; font-family: 'Ubuntu', sans-serif; text-align: center; visibility:hidden;"></div>
+      <div class="row" style="height:180px;">
       </div>
       <div class="row">
-        <button style="padding: 0; border: none; background: none;"><i class="material-icons maincolor" style="font-size:36px;" id="stop_button">done</i></button>
+        <button class="iconButton" id="stop_button"><img src="img/done.svg" style="height:36px; height:36px;"></img></button>
       </div>
     </div>
   </div>
-  <!-- <div class="row">
-    <div class="col-xs-2 col-md-4 col-lg-4 "></div>
-    <div class="col-xs-8 col-md-4 col-lg-4 "><div id="plandiv" style="font-size:18px; font-family: 'Ubuntu', sans-serif; text-align: center;"></div></div>
-    <div class="col-xs-2 col-md-4 col-lg-4 "><button style="padding: 0; border: none; background: none;"><i class="material-icons maincolor" style="font-size:36px;" id="stop_button">done</i></button></div>
-  </div> -->
-  <!-- <div class="row">
-    <div class="col-xs-1 col-md-2 col-lg-2"></div>
-    <div class="col-xs-8 col-md-7 col-lg-7"></div>
-    <div class="col-xs-2 col-md-1 col-lg-1"><button style="padding: 0; border: none; background: none;"><i class="material-icons maincolor" style="font-size:36px;" id="stop_button">done</i></button></div>
-  </div> -->
   <script>require('./timer.js')</script>
 
 </body>

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('Ubuntu-regular/Ubuntu-regular.ttf') format ('truetype'),
+       url('Ubuntu-regular/Ubuntu-regular.woff') format ('woff');
+}
+
 .maincolor {
   color: #6897b9;
 }

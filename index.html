@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Index</title>
+  <title>Start</title>
   <link rel="stylesheet" href="css/textarea_line.css">
   <link rel="stylesheet" href="css/grid12.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Ubuntu" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/general.css">
 
 </head>
 <body>
 
   <div class="row" style="height:50px">
-    <div class="col-xs-1 col-md-1 col-lg-1"><button class="iconButton" id="quit_button"><i class="material-icons maincolor">clear</i></button></div>
-    <div class="col-xs-1 col-md-1 col-lg-1"><button class="iconButton" id="record_button"><i class="material-icons maincolor" >date_range</i></button></div>
+    <div class="col-xs-1 col-md-1 col-lg-1"><button class="iconButton" id="quit_button"><img src='img/clear.svg'></img></button></div>
+    <div class="col-xs-1 col-md-1 col-lg-1"><button class="iconButton" id="record_button"><img src='img/date.svg'></img></button></div>
   </div>
   <div class="row">
     <div class="col-xs-1 col-md-2 col-lg-2"></div>
-    <div class="col-xs-10 col-md-8 col-lg-8" style="font-size:18px; font-family: 'Ubuntu', sans-serif;
-">In the next <select class="maincolor selectStyle" id="timeLength">
+    <div class="col-xs-10 col-md-8 col-lg-8" style="font-size:18px; font-family: 'Ubuntu', sans-serif;">In the next <select class="maincolor selectStyle" id="timeLength">
   <option value="10" style="background:pink;">10</option>
   <option value="20">20</option>
   <option value="25" selected>25</option>
@@ -41,13 +38,9 @@
   <div class="row">
     <div class="col-xs-1 col-md-2 col-lg-2"></div>
     <div class="col-xs-8 col-md-7 col-lg-7"></div>
-    <div class="col-xs-2 col-md-1 col-lg-1"><button style="padding: 0; border: none; background: none;"><i class="material-icons maincolor" style="font-size:36px;" id="start_button">arrow_forward</i></button></div>
+    <div class="col-xs-2 col-md-1 col-lg-1"><button class="iconButton" id="start_button"><img src='img/forward.svg' style="width:36px; height:36px;"></img></button></div>
   </div>
 
-  <!-- <h1>In the next <input id="lengthInput" pattern="[1-200.]+" type="number" value="25"> minutes, I plan to</h1> -->
-  <!-- <form class="form-style-8">
-  <textarea class="form-style-8" placeholder="" onkeyup="adjust_textarea(this)" id="plan"></textarea>
-  </form> -->
   <script>require('./index.js')</script>
   <script type="text/javascript">
   //auto expand textarea
@@ -57,7 +50,5 @@
   }
   </script>
 
-
-  <!-- https://www.sanwebe.com/2014/08/css-html-forms-designs -->
 </body>
 </html>

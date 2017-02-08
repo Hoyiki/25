@@ -23,7 +23,7 @@ mb.on('ready', function ready () {
   //   let win = new BrowserWindow({width:400, height:400})
   // })
   mb.on('after-create-window', function ha (){
-    mb.window.openDevTools()
+    //mb.window.openDevTools()
     mb.window.loadURL(`file://${__dirname}/index.html`)
 
     //window.webContents.openDevTools()
@@ -36,7 +36,7 @@ mb.on('ready', function ready () {
     ipcMain.on('load-record', (event, arg) => {
         let win = new BrowserWindow({width:800, height:600})
         win.loadURL(arg);
-        win.webContents.openDevTools()
+        //win.webContents.openDevTools()
     });
 
     ipcMain.on('plan', (event, arg) => {

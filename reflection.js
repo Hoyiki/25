@@ -48,14 +48,15 @@ let plan = remote.getGlobal('plan')
 //   // 'icon': 'file://' + __dirname + '/notification_icon.png',
 //   //'contentImage': 'file://' + __dirname + '/notification_icon.png'
 // });
+
 console.log(noti)
 if (noti==true) {
   notifier_start.notify({
     'title': 'Worked for '+time+' minutes',
     'message':plan+' ',
     'sound': 'Submarine',
-    //'wait':false,
-    //timeout: 20,
+    // 'wait': true
+     //timeout: 60
     //'icon': 'file://' + __dirname + '/whale.png',
     //'contentImage': 'file://' + __dirname + '/whale.png'
   });
